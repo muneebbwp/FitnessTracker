@@ -1,0 +1,26 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "An App to view and create workout plans and be able to track them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muneebbwp/FitnessTracker.git"
+  },
+  "keywords": [
+    "fitness",
+    "tracker"
+  ],
+  "author": "Muneeb Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muneebbwp/FitnessTracker/issues"
+  },
+  "homepage": "https://github.com/muneebbwp/FitnessTracker#readme",
+  "dependencies": {
+    "mongodb": "^3.6.3"
+  }
+}
