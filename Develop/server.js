@@ -1,3 +1,4 @@
+
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -12,7 +13,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+    process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -21,13 +22,11 @@ mongoose.connect(
     }
   );
 
-
 const db = require("./models");
 
 require("./routes/apiRoutes")(app);
-require("./Routes/htmlRoutes.js")(app);
+require("./routes/htmlRoutes")(app);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
-
