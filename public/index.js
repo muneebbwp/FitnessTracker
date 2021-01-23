@@ -21,7 +21,7 @@ init();
 
 async function init() {
   if (location.pathname.includes("/exercise") && location.search.split("=")[1] === undefined) {
-    console.log("excersise")
+    console.log("exercise")
     const newWorkout = await API.createWorkout();
     const workout = await API.getLastWorkout();
     if (workout) {
